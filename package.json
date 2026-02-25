@@ -1,0 +1,18 @@
+{
+  "name": "smart-traffic-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered smart traffic management platform with real-time vehicle detection, adaptive signal control, and an admin dashboard.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
